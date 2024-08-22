@@ -1,4 +1,4 @@
-:root{
+:root {
     --black-color: hsl(var(--hue-color), 4%, 4%);
 }
 
@@ -13,7 +13,7 @@ body {
     font-family: poppins;
 }
 
-nav{
+nav {
     /* position: fixed; */
     top: 0;
     left: 0;
@@ -25,7 +25,6 @@ nav{
     justify-content: space-around;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
-
 }
 
 nav ul {
@@ -51,7 +50,7 @@ nav ul li a:hover {
 }
 
 header {
-    height: 100px; 
+    height: 100px;
 }
 
 .banner {
@@ -75,6 +74,7 @@ header {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -86,15 +86,13 @@ header {
     font-size: 20px;
 }
 
-.one{
+.one {
     padding: 85px 10px 30px 10px;
     /* background-color: #444; */
     height: 80vh;
-    text-align: center;
-    align-items: center;
 }
 
-.head h1{
+.head h1 {
     margin-bottom: 50px;
     text-align: center;
     font-size: 2.5rem;
@@ -102,7 +100,7 @@ header {
 
 .order-box {
     width: 100vh;
-    margin-left: 110px;
+    margin-left: 25vw;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -178,24 +176,24 @@ input[type="text"] {
     font-size: 1em;
 }
 
-.two{
+.two {
     height: 80vh;
     align-items: center;
     padding-top: 70px;
     /* background-color: #634242; */
 }
 
-.content{
+.content {
     display: flex;
     justify-content: space-around;
 }
 
-.content .left{
+.content .left {
     margin-top: 25vh;
     font-size: 2.5rem;
 }
 
-.content .right img{
+.content .right img {
     margin-top: 50px;
 }
 
@@ -203,12 +201,12 @@ input[type="text"] {
     color: #E6B9A6;
 }
 
-.three{
+.three {
     padding-top: 50px;
     height: 80vh;
 }
 
-.cards{
+.cards {
     padding: 50px;
     /* background-color: #ffffff; */
     display: flex;
@@ -227,7 +225,7 @@ input[type="text"] {
     transition: transform 0.3s ease;
 }
 
-.fourth{
+.fourth {
     height: 80vh;
 
 }
@@ -251,179 +249,231 @@ input[type="text"] {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
-    font-size: 16px; /* Set a base font size */
-  }
-  
-  /* Media queries for different devices */
-  /* Mobile devices (max-width: 480px) */
-  @media only screen and (max-width: 480px) {
+}
+
+body {
+    font-size: 16px;
+    /* Set a base font size */
+}
+
+/* Media queries for different devices */
+/* Mobile devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
     nav {
-      padding: 10px;
+        padding: 10px;
     }
+
     nav ul {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
+
     nav ul li {
-      margin: 0 10px;
+        margin: 0 10px;
     }
+
     .banner {
-      padding: 10px 0;
+        padding: 10px 0;
     }
+
     .banner-content {
-      padding-left: 50%;
+        padding-left: 50%;
     }
+
     .one {
-      padding: 40px 10px;
+        padding: 40px 10px;
     }
-    .two{
+
+    .two {
         height: 125vh;
         padding: 0px 10px;
         text-align: center;
     }
+
     .order-box {
-      width: 90vw;
-      padding: 15px;
-      margin-left: 15px;
-      text-align: center;
+        width: 90vw;
+        padding: 15px;
+        margin-left: 15px;
+        text-align: center;
     }
+
     .content {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     .content .left {
-      margin-top: 10vh;
+        margin-top: 10vh;
     }
+
     .content .right img {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
     }
-    .three{
+
+    .three {
         height: 125vh;
     }
+
     .cards {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     .card {
-      width: 100%;
-      margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 20px;
     }
-    .fourth{
+
+    .fourth {
         height: 125vh;
     }
+
     .footer {
-      padding: 1rem 5%;
+        padding: 1rem 5%;
     }
-  }
-  
-  /* Tablet devices (max-width: 768px) */
-  @media only screen and (max-width: 768px) {
+}
+
+/* Tablet devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
     body {
-      font-size: 15px;
+        font-size: 15px;
     }
+
     nav {
-      padding: 15px;
+        padding: 15px;
     }
+
     nav ul {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
+
     nav ul li {
-      margin: 0 15px;
+        margin: 0 15px;
     }
+
     .banner {
-      padding: 15px 0;
+        padding: 15px 0;
     }
+
     .banner-content {
-      padding-left: 60%;
+        padding-left: 60%;
     }
+
     .one {
-      padding: 60px 15px;
-      height: 70vh;
+        padding: 60px 15px;
+        height: 70vh;
     }
+
     .order-box {
-      width: 65vw;
-      padding: 20px;
-      margin-left: 50px;
+        width: 65vw;
+        padding: 20px;
+        margin-left: 50px;
 
     }
-    .two{
+
+    .two {
         height: 120vh;
         padding: 50px;
     }
+
     .content {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     .content .left {
-      margin-top: 15vh;
+        margin-top: 15vh;
     }
-    .three{
+
+    .three {
         height: 100vh;
     }
+
     .content .right img {
-      width: 100%;
-      height: auto;
-      margin-top: 30px;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
     }
+
     .cards {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     .card {
-      width: 100%;
-      margin-bottom: 30px;
+        width: 100%;
+        margin-bottom: 30px;
     }
+.fourth{
+    height: 100vh;
+}
     .footer {
-      padding: 1.5rem 7%;
+        padding: 1.5rem 7%;
     }
-  }
-  
-  /* Desktop devices (min-width: 1024px) */
-  @media only screen and (min-width: 1024px) {
+}
+
+/*Desktop devices (min-width: 1024px) */
+@media only screen and (min-width: 800px) {
     body {
-      font-size: 18px;
+        font-size: 18px;
     }
+
     nav {
-      padding: 20px;
+        padding: 20px;
     }
+
     nav ul {
-      justify-content: space-between;
+        justify-content: space-between;
     }
+
     nav ul li {
-      margin: 0 20px;
+        margin: 0 20px;
     }
+
     .banner {
-      padding: 20px 0;
+        padding: 20px 0;
     }
+
     .banner-content {
-      padding-left: 70%;
+        padding-left: 70%;
     }
+
     .one {
-      padding: 80px 20px;
+        padding: 80px 20px;
+        height: 70vh;
     }
+
     .order-box {
-      width: 80vw;
-      padding: 25px;
+        width: 80vw;
+        padding: 25px;
+        margin-left: 75px;
     }
+.two{
+    padding: 20px;
+    height: 70vh;
+}
     .content {
-      flex-direction: row;
+        flex-direction: row;
     }
+
     .content .left {
-      margin-top: 20vh;
+        margin-top: 40px;
     }
+
     .content .right img {
-      width: 100%;
-      height: auto;
-      margin-top: 40px;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
     }
+
     .cards {
-      flex-direction: row;
+        flex-direction: row;
+        
     }
+
     .card {
-      width: 30%;
-      margin: 20px;
+        width: 30%;
+        margin: 20px;
     }
+
     .footer {
-      padding: 2rem 10%;
+        padding: 2rem 10%;
     }
-  }
+}
