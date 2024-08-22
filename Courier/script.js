@@ -1,3 +1,23 @@
+const slider = document.querySelector('.slides');
+let isHovered = false;
+
+slider.addEventListener('mouseover', () => {
+    slider.style.animationPlayState = 'paused';
+    isHovered = true;
+});
+
+slider.addEventListener('mouseout', () => {
+    slider.style.animationPlayState = 'running';
+    isHovered = false;
+});
+
+setInterval(() => {
+    if (!isHovered) {
+        slider.style.animationPlayState = 'running';
+    }
+}, 100);  // Adjust the interval as needed
+
+
 document.addEventListener('DOMContentLoaded', function () {
     ScrollReveal().reveal('.head', {
         duration: 1000,

@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     color: #EEEDEB;
     font-family: poppins;
 }
@@ -49,6 +49,10 @@ nav ul li a:hover {
     font-size: 1.05rem;
 }
 
+.logo img{
+    width: 250px;
+}
+
 header {
     height: 100px;
 }
@@ -86,10 +90,51 @@ header {
     font-size: 20px;
 }
 
+.slider {
+    width: 100%;
+    /* max-width: 100vw; */
+    overflow: hidden;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100vw;
+    height: 80vh;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Keyframes for sliding */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+
 .one {
     padding: 85px 10px 30px 10px;
     /* background-color: #444; */
-    height: 80vh;
+    height: 100vh;
 }
 
 .head h1 {
@@ -239,6 +284,21 @@ input[type="text"] {
     background: rgb(15, 15, 15);
 }
 
+.lists {
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+}
+
+.list ul li {
+    list-style: none;
+    font-weight: 300;
+    font-size: 15px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+
+
 .footer-text {
     font-size: 1rem;
 }
@@ -269,6 +329,9 @@ body {
 
     nav ul li {
         margin: 0 10px;
+    }
+    .logo img{
+        width: 150px;
     }
 
     .banner {
@@ -330,6 +393,13 @@ body {
     .footer {
         padding: 1rem 5%;
     }
+
+    .lists{
+        gap: 50px;
+        margin-bottom: 10px;
+    }
+
+    .lists{}
 }
 
 /* Tablet devices (max-width: 768px) */
@@ -360,7 +430,7 @@ body {
 
     .one {
         padding: 60px 15px;
-        height: 70vh;
+        height: 100vh;
     }
 
     .order-box {
@@ -401,11 +471,18 @@ body {
         width: 100%;
         margin-bottom: 30px;
     }
-.fourth{
-    height: 100vh;
-}
+
+    .fourth {
+        height: 100vh;
+    }
+
     .footer {
         padding: 1.5rem 7%;
+    }
+
+    .lists{
+        gap: 50px;
+        margin-bottom: 10px;
     }
 }
 
@@ -445,10 +522,12 @@ body {
         padding: 25px;
         margin-left: 75px;
     }
-.two{
-    padding: 20px;
-    height: 70vh;
-}
+
+    .two {
+        padding: 20px;
+        height: 70vh;
+    }
+
     .content {
         flex-direction: row;
     }
@@ -465,7 +544,7 @@ body {
 
     .cards {
         flex-direction: row;
-        
+
     }
 
     .card {
