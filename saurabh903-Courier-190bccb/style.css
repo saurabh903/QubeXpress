@@ -1,0 +1,708 @@
+
+:root {
+    --black-color: hsl(var(--hue-color), 4%, 4%);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223, 223, 223);
+    color: #EEEDEB;
+    font-family: poppins;
+    width: auto;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    background-color: red;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background: var(--black-color); */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav ul li a:hover {
+    color: rgb(167, 167, 245);
+    font-size: 1.05rem;
+}
+
+.dropbtn {
+    background: inherit;
+    /* background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 0, 0)); */
+    font-weight: 800;
+    color: #ffc342;
+    padding: 7px;
+    font-size: 30px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    /* margin-right: 50px; */
+    position: relative;
+    display: inline-block;
+    /* text-align: center; */
+}
+
+.dropdown img{
+    width: 50px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -70%;
+    background-color: #ffc342;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content button{
+    background-color: #ffc342;
+    border: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    /* background-color: #ffc342; */
+}
+
+.logo img {
+    width: 250px;
+}
+
+.buttons button {
+    background-color: #ffc342;
+    color: #000000;
+    border: 0px solid wheat;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.2s all;
+    cursor: pointer;
+    align-items: center;
+}
+
+.buttons button:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+}
+
+header {
+    height: 70px;
+}
+
+/* banner */
+
+.banner-1 {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffc342;
+    color: rgb(47, 47, 47);
+    padding: 10px 0;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content-1 {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.banner-content-1 p {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+/* section-1 */
+.one{
+    height: 85vh;
+    width: 100vw;
+}
+.background-box {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    background-image: url('images/top-image2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 25vh;
+}
+
+.background-box .overlay .content h1 {
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* margin-top: 130px; */
+    border-radius: 25px;
+    /* Rounded container */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-box {
+    flex: 1;
+    padding: 15px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #e5e5e5;
+    /* Light grey input background */
+    color: #909090;
+    /* Grey text color */
+    max-width: 100vh;
+    margin-left: 25vh;
+}
+
+.track-button {
+    padding: 15px 30px;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    outline: none;
+    background-color: #ffc342;
+    /* Bright pink button */
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* section-2 */
+
+.two {
+    height: 70vh;
+    /* background-color: rgb(161, 6, 6); */
+    background-color: rgb(222, 222, 222);
+    margin-top: -175px;
+    width: 100%;
+}
+
+.two .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .left {
+    margin-top: 20vh;
+    font-size: 2rem;
+    /* align-items: center; */
+}
+
+.content .right img {
+    margin-top: 80px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+    color: black;
+}
+
+/* section-3 */
+
+.three {
+    height: 45vh;
+    /* background-color: rgb(223, 18, 18); */
+    background-color: rgb(222, 222, 222);
+    /* background-color: #ffc342; */
+    margin-top: -175px;
+}
+
+.three .content .right img {
+    margin-top: 0px;
+}
+
+.three .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.three .content .left {
+    margin-top: 0vh;
+    font-size: 2rem;
+    /* align-items: center; */
+}
+
+/* section-4 */
+
+.four {
+    background-color: rgb(222, 222, 222);
+    /* background-color: #909090; */
+    height: 60vh;
+    margin-top: -100px;
+}
+
+.container-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-top: 50px; */
+}
+
+.card {
+    background-color: rgb(40, 3, 3);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 20vh;
+    width: 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.fifth .background-box{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/courier3.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 25vh;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: rgb(0, 0, 0);
+}
+
+.lists {
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+}
+
+.list ul li {
+    list-style: none;
+    font-weight: 300;
+    font-size: 15px;
+    word-spacing: 0px;
+    letter-spacing: px;
+}
+
+
+.footer-text {
+    font-size: 1rem;
+}
+
+body {
+    background-color: rgb(222, 222, 222);
+    color: #EEEDEB;
+    font-family: "Moderustic";
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    nav {
+        padding: 10px;
+        margin-bottom: 0;
+        /* background-color: #000; */
+    }
+
+    nav ul {
+        /* flex-wrap: wrap; */
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .dropdown-content {
+        right: 0;
+        width: 100%;
+    }
+
+    .banner-content-1 p {
+        font-size: 16px;
+    }
+
+    .one{
+        height: 100vh;
+        
+    }
+
+    .background-box {
+        position: relative;
+        width: inherit;
+        height: inherit;
+        background-image: url('images/top-6.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background-box .overlay .content h1 {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 25px;
+        /* Rounded container */
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-box {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .track-button {
+        width: 100%;
+    }
+
+    .two {
+        height: 75vh;
+    }
+
+    .two .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .two .right img{
+        width: 350px;
+        margin-left: -25px;
+    }
+
+    .two .content .left{
+        font-size: 1.25rem;
+    }
+
+    .three {
+        height: 40vh;
+        /* margin-top: 10px; */
+    }
+
+    .three .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .three .content .left {
+        font-size: 1.25rem;
+        margin-top: 20px;
+    }
+
+    .three .right img{
+        width: 350px;
+        margin-left: -25px;
+    }
+
+    .eight{
+        display: none;
+    }
+
+    .four {
+        height: 125vh;
+        margin-top: 15vh;
+    }
+
+    .four .container-4 {
+        text-align: center;
+        /* margin-top: 5vh; */
+    }
+
+    .lists {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .list ul {
+        padding: 0;
+    }
+
+    .card {
+        width: 45%;
+        margin: 20px 5%;
+    }
+
+    .fifth .background-box{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background-image: url('images/courier4.png');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 1rem 5%;
+    }
+
+    .lists {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-text {
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* For tablets (600px to 768px) */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        display: none;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .dropdown-content {
+        right: 0;
+        width: 80%;
+    }
+
+    .background-box .overlay .content h1 {
+        font-size: 2rem;
+    }
+
+    .two .content {
+        flex-direction: row;
+    }
+
+    .three .content {
+        flex-direction: row;
+    }
+    
+    .eight{
+        display: none;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px 5%;
+    }
+
+    .lists {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    .footer-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* For desktops (above 768px) */
+@media only screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+
+    .background-box .overlay .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .input-box {
+        max-width: 70%;
+    }
+
+    .track-button {
+        width: auto;
+    }
+
+    .two .content {
+        flex-direction: row;
+    }
+
+    .three .content {
+        flex-direction: row;
+    }
+
+    .lists {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .seven{
+        display: none;
+    }
+
+    .footer-text {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+}
